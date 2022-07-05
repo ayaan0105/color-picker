@@ -1,0 +1,11 @@
+.palette{
+    height: 100vh;
+    overflow: hidden;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.palette-colors {
+    height: 88%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}

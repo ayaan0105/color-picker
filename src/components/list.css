@@ -1,0 +1,206 @@
+.root{
+    background-color: white;
+    height: 100%;
+    
+    display: flex;
+    font-family: 'Montserrat';
+    align-items: flex-start;
+    justify-content: center;
+    /* z-index: -10; */
+    /* flex-direction: column; */
+}
+.nav h1{
+    width: 150px;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    font-size: 1.6rem;
+    justify-content: flex-start;
+    border-bottom: 10px dotted rgba(0, 0, 0, 0.335);
+    width: 14rem;
+    margin-bottom: 2.4rem;
+    /* z-index: -10; */
+}
+.container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    align-items: flex-start;
+    /* margin-bottom: 5%; */
+}
+.nnt{
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 570px; */
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-gap: 5%;
+    /* height: 10%; */
+}
+.icn{
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto 0 auto auto;
+    align-items: center;    
+    /* border: 2px solid black; */
+    
+    height: 100px;
+    text-decoration: none;
+}
+.icn .next{
+ font-size: 1rem;
+ 
+ /* margin-top: 2rem; */
+ /* margin-bottom: 0; */
+}
+.icn h1:hover{
+    transition: 0.4s ease;
+    /* color: black; */
+    color: #292929;
+
+    text-shadow: 10px 10px 8px rgb(129, 129, 129);
+}
+
+.icn a{
+    text-decoration: none;
+    color: rgba(36, 49, 104, 0.877);
+    /* color: #f0776c; */
+}
+
+.icn2{
+    display: flex;
+    width: 108%;
+}
+
+
+
+  
+  .next{
+    float: none; 
+    clear: both;
+    width: 30%; 
+    margin: 10% auto;
+    background: rgb(255, 255, 255);
+    width: 90px;
+    border-radius: 15px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  nav li{
+    float: none; 
+    width: 100%;
+  }
+  
+  nav li a{
+    display: block; 
+    width: 100%; 
+    padding: 5px 0px 5px 8px; 
+    border-left: 5px solid; 
+    position: relative; 
+    z-index: 2;
+    text-decoration: none;
+    color: #444;
+    box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+  }
+    
+  nav li a:hover{ border-bottom: 0px; color: #fff;
+   }
+ 
+  nav li a{ border-left: 10px solid rgba(36, 49, 104, 0.877); }
+ 
+  
+  nav li a:after { 
+    content: "";
+    height: 100%; 
+    left: 0; 
+    top: 0; 
+    width: 0px;  
+    position: absolute; 
+    transition: all 0.3s ease 0s; 
+    -webkit-transition: all 0.3s ease 0s; 
+    z-index: -1;
+  }
+  
+  nav li a:hover:after{ width: 100%; 
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;}
+
+  nav li a:after{ background: rgba(36, 49, 104, 0.877); }
+  
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+  }
+
+
+  @media (max-width:991.98px) {
+    
+    .nnt{
+      grid-template-columns: repeat(2,50%);
+    }
+    .container{
+      width: 60%
+    }
+}
+
+@media (max-width: 767.98px){
+    
+}
+
+
+@media (max-width: 575.98px) {
+    .nnt{
+      grid-template-columns: repeat(1,100%);
+    }
+    .container{
+      width: 50%;
+    }
+    .nav {
+      position: relative;
+      left: -80px;
+      width: 10rem;
+    }
+    .icn{
+      position: relative;
+      left: 52px;
+    }
+    .nav h1{
+      margin-bottom: 1rem;
+    }
+}
+
+
+
